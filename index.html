@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Calculator</title>
+    <link rel="stylesheet" href="style.css" class="rel">
+
+    <script src="main.js"></script>
+</head>
+
+<body bgcolor="pink" >
+<center>
+        <h1>Online Calculator</h1>
+        <form name ="form1">
+            <table>
+                <tr>
+                    <td><input type="text" name="box"></td>
+                </tr>
+                <tr>
+                    <td><button type="button" class="button" onclick="squar();">x<sup>2</sup></button>
+                        <button type="button" class="button" onclick="cubed();">x<sup>3</sup></button>
+                        <button type="button" class="button" onclick="squaroot();">&#8730</button>
+                        <button type="button" class="button" onclick="cuberoot();">&#8731</button>
+                        <button type="button" class="button" onclick="facto();">n!</button>
+                        <button type="button" class="button" onclick="loog();">log<sub>10</sub></button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><button type="button" class="button" onclick="sine();">sin</button>
+                        <button type="button" class="button" onclick="cosin();">cos</button>
+                        <button type="button" class="button" onclick="tann();">tan</button>
+                        <button type="button" class="button" onclick="sinr();">sin<sup>-1</sup></button>
+                        <button type="button" class="button" onclick="cosr();">cos<sup>-1</sup></button>
+                        <button type="button" class="button" onclick="tanr();">tan<sup>-1</sup></button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><button type="button" class="button" onclick="form1.box.value+='7'">7</button>
+                        <button type="button" class="button" onclick="form1.box.value+='8'">8</button>
+                        <button type="button" class="button" onclick="form1.box.value+='9'">9</button>
+                        <button type="button" class="button" onclick="form1.box.value+='+'">&#43</button>
+                        <button type="button" class="button" onclick="form1.box.value+='*'">&#215</button>
+                        <button type="button" class="button" onclick="form1.box.value+='('">(</button>
+                         </td>
+                </tr>
+
+                <tr>
+                    <td><button type="button" class="button" onclick="form1.box.value+='4'">4</button>
+                        <button type="button" class="button" onclick="form1.box.value+='5'">5</button>
+                        <button type="button" class="button" onclick="form1.box.value+='6'">6</button>
+                        <button type="button" class="button" onclick="form1.box.value+='-'">&#8722</button>
+                        <button type="button" class="button" onclick="form1.box.value+='/'">&#247</button>
+                        <button type="button" class="button" onclick="form1.box.value+=')'">)</button>
+                         </td>
+                </tr>
+
+                <tr>
+                    <td><button type="button" class="button" onclick="form1.box.value+='1'">1</button>
+                        <button type="button" class="button" onclick="form1.box.value+='2'">2</button>
+                        <button type="button" class="button" onclick="form1.box.value+='3'">3</button>
+                        <button type="button" class="button" onclick="form1.box.value+='0'">0</button>
+                        <button type="button" class="button" onclick="form1.box.value+='.'">.</button>
+                        <button type="button" class="button" onclick="form1.box.value+='%'">&#37</button>
+                         </td>
+                </tr>
+
+                <tr>
+                    <td><button type="button" class="buttonlast" onclick="form1.box.value+=''">AC</button>
+                        <button type="button" class="buttonlast" onclick="form1.box.value=eval(form1.box.value)">=</button>
+                     </td>
+                </tr>
+
+            </table>
+        </form>
+    
+    
+</body>
+</html>
